@@ -57,19 +57,24 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 60px;
-    padding: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
     background-color:rgb(61, 15, 104);
+    /* Заокруглені кути */
+    border-radius: 15px;
 }
 
 .stat-item {
     background-color:ghostwhite;
     padding: 50px;
-    width: 100px;
+    max-width: 250px;
+    min-width: 50px;
     text-align: center;
-    color:rgb(212, 99, 6)
+    color:rgb(212, 99, 6);
+    border-radius: 10px;
+    flex: 1; /* Картки розтягуватимуться рівномірно */
 }
 
 .mission, .trip {
