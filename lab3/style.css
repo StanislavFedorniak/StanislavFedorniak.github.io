@@ -17,6 +17,7 @@ header h1 {
 header ul {
     display: flex;
     justify-content: center;
+    align-items: start;
     /* прибирає крапки у списку */
     list-style-type: none;
     gap: 40px;
@@ -144,4 +145,58 @@ img {
     .mission, .trip {
         padding: 15px;
     }
+}
+
+.crew-form-container {
+    margin-top: 20px;
+}
+
+.status-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.status-message.error {
+    color: red;
+}
+
+.status-message.success {
+    color: green;
+}
+
+.candidate-item {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.mission-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#candidates-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* прибирає крапки у списку */
+    list-style-type: none;
+    gap: 200px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+#candidates-container li {
+    text-decoration: none;
+    color: rgb(149, 225, 180);
+}
+
+#candidates-container li:hover {
+    color: white;
+    text-shadow: 0 0 10px #d02a1e;
 }

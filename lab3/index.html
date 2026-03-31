@@ -41,50 +41,47 @@
                     <h3>Екіпаж</h3>
                     <p>19 осіб</p>
                 </div>
+
+                <div class="stat-item">
+                    <h3>Тривалість польоту</h3>
+                    <p id="flight-timer">00:00:00</p>
+                </div>
             </div>
         </section>
 
         <section id="expeditions">
             <h2>Експедиції</h2>
+            <div id="missions-container"></div>
+        </section>
 
-            <article class="mission">
-                <h3>Місія 1: Операція "Червоний Світанок" (Марс)</h3>
-                <p><strong>Опис:</strong> Створення першої постійної колонії в кратері Єзеро.</p>
-                <p><strong>Завдання:</strong></p>
-                <ol>
-                    <li>Розгорнути сонячні батареї для живлення бази.</li>
-                    <li>Провести буріння ґрунту для пошуку води.</li>
-                    <li>Налаштувати систему життєзабезпечення "Ares-V".</li>
-                </ol>
-            </article>
+        <section id="crew-managment">
+            <h2>Комплектування екіпажу</h2>
 
-            <article class="mission">
-                <h3>Місія 2: Проєкт "Крижане Серце" (Європа, супутник Юпітера)</h3>
-                <p><strong>Опис:</strong> Глибоководне дослідження підлідного океану на наявність життя.</p>
-                <p><strong>Завдання:</strong></p>
-                <ol>
-                    <li>Просканувати товщину льоду в секторі Галілей.</li>
-                    <li>Занурити зонд "Посейдон" на глибину 10 км.</li>
-                    <li>Зібрати зразки мікроорганізмів біля гідротермальних джерел.</li>
-                </ol>
-            </article>
+            <div id="candidates-container">
+                <h3>Доступний резерв (натисніть для вибору)</h3>
+                <ul id="candidates-list"></ul>
+            </div>
 
-            <article class="mission">
-                <h3>Місія 3: Пояс Астероїдів "Золота Лихоманка"</h3>
-                <p><strong>Опис:</strong> Видобуток рідкісних металів на астероїді Психея-16.</p>
-                <p><strong>Завдання:</strong></p>
-                <ol>
-                    <li>Здійснити стикування з автоматичною шахтою.</li>
-                    <li>Завантажити 500 тонн платинової руди.</li>
-                    <li>Відбити атаку космічних піратів.</li>
-                </ol>
-            </article>
+            <form id="crew-form" class="crew-form-container">
+                <input type="text" id="crew-name" placeholder="Позивний / Ім'я">
+                <input type="text" id="crew-role" placeholder="Спеціалізація">
+                <button type="submit">Призначити</button>
+            </form>
+
+            <div id="form-message" class="status-message"></div>
+
+            <h3>Затверджений склад місії</h3>
+            <ul id="assigned-crew-list"></ul>
+
+            <hr>
+            <button id="start-mission-btn" class="mission-btn">Почати місію</button>
+            <div id="mission-status" class="status-message"></div>
         </section>
 
         <section id="my-trips">
             <h2>Мої подорожі</h2>
-
-            <article class="trip">
+            <div id="trips-container">
+                <article class="trip">
                 <h3>Поточна експедиція: Орбіта Сатурна</h3>
                 <div class="photo-wrapper">
                     <img src="images/saturn.png" alt="Дальний план Орбіти Сатурна в космосі" width="600" height="400" loading="lazy">
@@ -94,16 +91,16 @@
                     <li><strong>Дата початку:</strong> 15 січня 2026 року</li>
                     <li><strong>Мета:</strong> Картографування кілець Сатурна та ремонт супутника зв'язку "Кассіні-2". На даний момент екіпаж проводить діагностику двигунів перед маневром біля Титана.</li>
                 </ul>
-            </article>
+                </article>
 
-            <article class="trip">
+                <article class="trip">
                 <h3>Минула експедиція: Місячна База "Артеміда"</h3>
                 <ul>
                     <li><strong>Статус:</strong> Успішно завершено</li>
                     <li><strong>Дата:</strong> 10 листопада 2025 року — 20 грудня 2025 року</li>
                     <li><strong>Звіт:</strong> Доставлено вантаж провізії та наукового обладнання. Екіпаж успішно протестував новий місяцехід. Повернення на Землю пройшло в штатному режимі.</li>
                 </ul>
-            </article>
+                </article>
 
             <article class="trip">
                 <h3>Минула експедиція: Ремонт телескопа "Джеймс Вебб"</h3>
@@ -113,11 +110,14 @@
                     <li><strong>Звіт:</strong> Заміна гіроскопів орієнтації. Телескоп повернувся до роботи і передав нові знімки галактики Андромеди.</li>
                 </ul>
             </article>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>Контакти: space@gmail.com | 2026</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
