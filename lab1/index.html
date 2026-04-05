@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Expedition Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Space Expedition Simulator</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#spaceship">Космічний корабель</a></li>
+                <li><a href="#expeditions">Експедиції</a></li>
+                <li><a href="#my-trips">Мої подорожі</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="spaceship">
+            <h2>Космічний корабель</h2>
+            <div class="photo-wrapper">
+                <img src="images/spaceship.jpg" alt="Фото космічного корабля в космосі" width="600" height="400" loading="lazy">
+            </div>
+            <div class="ship-stats-container">
+                <div class="stat-item">
+                    <h3>Паливо</h3>
+                    <p>80%</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>Енергія</h3>
+                    <p>100%</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>Екіпаж</h3>
+                    <p>19 осіб</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>Тривалість польоту</h3>
+                    <p id="flight-timer">00:00:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="expeditions">
+            <h2>Експедиції</h2>
+            <div id="missions-container"></div>
+        </section>
+
+        <section id="crew-managment">
+            <h2>Комплектування екіпажу</h2>
+
+            <div id="candidates-container">
+                <h3>Доступний резерв (натисніть для вибору)</h3>
+                <ul id="candidates-list"></ul>
+            </div>
+
+            <form id="crew-form" class="crew-form-container">
+                <input type="text" id="crew-name" placeholder="Позивний / Ім'я">
+                <input type="text" id="crew-role" placeholder="Спеціалізація">
+                <button type="submit">Призначити</button>
+            </form>
+
+            <div id="form-message" class="status-message"></div>
+
+            <h3>Затверджений склад місії</h3>
+            <ul id="assigned-crew-list"></ul>
+
+            <hr>
+            <button id="start-mission-btn" class="mission-btn">Почати місію</button>
+            <div id="mission-status" class="status-message"></div>
+        </section>
+
+        <section id="my-trips">
+            <h2>Мої подорожі</h2>
+            <div id="trips-container">
+                <article class="trip">
+                <h3>Поточна експедиція: Орбіта Сатурна</h3>
+                <div class="photo-wrapper">
+                    <img src="images/saturn.png" alt="Дальний план Орбіти Сатурна в космосі" width="600" height="400" loading="lazy">
+                </div>
+                <ul>
+                    <li><strong>Статус:</strong> В процесі (Виконано 78%)</li>
+                    <li><strong>Дата початку:</strong> 15 січня 2026 року</li>
+                    <li><strong>Мета:</strong> Картографування кілець Сатурна та ремонт супутника зв'язку "Кассіні-2". На даний момент екіпаж проводить діагностику двигунів перед маневром біля Титана.</li>
+                </ul>
+                </article>
+
+                <article class="trip">
+                <h3>Минула експедиція: Місячна База "Артеміда"</h3>
+                <ul>
+                    <li><strong>Статус:</strong> Успішно завершено</li>
+                    <li><strong>Дата:</strong> 10 листопада 2025 року — 20 грудня 2025 року</li>
+                    <li><strong>Звіт:</strong> Доставлено вантаж провізії та наукового обладнання. Екіпаж успішно протестував новий місяцехід. Повернення на Землю пройшло в штатному режимі.</li>
+                </ul>
+                </article>
+
+            <article class="trip">
+                <h3>Минула експедиція: Ремонт телескопа "Джеймс Вебб"</h3>
+                <ul>
+                    <li><strong>Статус:</strong> Успішно завершено</li>
+                    <li><strong>Дата:</strong> 14 серпня 2025 року</li>
+                    <li><strong>Звіт:</strong> Заміна гіроскопів орієнтації. Телескоп повернувся до роботи і передав нові знімки галактики Андромеди.</li>
+                </ul>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контакти: space@gmail.com | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
