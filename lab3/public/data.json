@@ -9,7 +9,13 @@
                 "Провести буріння ґрунту для пошуку води.",
                 "Налаштувати систему життєзабезпечення \"Ares-V\"."
             ],
-            "destination": "Mars"
+            "destination": "Mars",
+            "image": "/images/spaceship.jpg",
+            "crew": [],
+            "maxCrew": 5,
+            "status": "очікує",
+            "difficulty": "середня",
+            "type": "колонізація"
         },
         {
             "id": 2,
@@ -20,7 +26,13 @@
                 "Занурити зонд \"Посейдон\" на глибину 10 км.",
                 "Зібрати зразки мікроорганізмів біля гідротермальних джерел."
             ],
-            "destination": "Europa"
+            "destination": "Europa",
+            "image": "/images/saturn.png",
+            "crew": [],
+            "maxCrew": 3,
+            "status": "очікує",
+            "difficulty": "складна",
+            "type": "дослідницька"
         },
         {
             "id": 3,
@@ -31,7 +43,13 @@
                 "Завантажити 500 тонн платинової руди.",
                 "Відбити атаку космічних піратів."
             ],
-            "destination": "Asteroids"
+            "destination": "Asteroids",
+            "image": "/images/spaceship.jpg",
+            "crew": [],
+            "maxCrew": 4,
+            "status": "очікує",
+            "difficulty": "легка",
+            "type": "рятувальна"
         }
     ],
     "availableCandidates": [
