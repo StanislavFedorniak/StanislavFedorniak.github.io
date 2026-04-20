@@ -16,13 +16,15 @@ function Missions() {
     const fetchMissions = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/data.json');
+        const response = await fetch(process.env.PUBLIC_URL + '/data.json');
         if (!response.ok) {
-          throw new Error('Не вдалося завантажити дані місій');
+          console.error(`HTTP Error: ${response.status} ${response.statusText}`);
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         const data = await response.json();
         setMissions(data.expeditions);
       } catch (err) {
+        console.error('Error fetching missions data:', err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -203,7 +205,7 @@ function Missions() {
           <article key={mission.id} className="mission">
             <div className="mission-header">
               <img 
-                src={mission.image} 
+                src={process.env.PUBLIC_URL + mission.image} 
                 alt={`Зображення місії: ${mission.title}`}
                 className="mission-image"
               />
