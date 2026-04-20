@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/StanislavFedorniak.github.io/static/css/main.235580e7.css",
-    "main.js": "/StanislavFedorniak.github.io/static/js/main.c1216cce.js",
-    "static/js/453.6e4f956a.chunk.js": "/StanislavFedorniak.github.io/static/js/453.6e4f956a.chunk.js",
-    "index.html": "/StanislavFedorniak.github.io/index.html",
-    "main.235580e7.css.map": "/StanislavFedorniak.github.io/static/css/main.235580e7.css.map",
-    "main.c1216cce.js.map": "/StanislavFedorniak.github.io/static/js/main.c1216cce.js.map",
-    "453.6e4f956a.chunk.js.map": "/StanislavFedorniak.github.io/static/js/453.6e4f956a.chunk.js.map"
+    "main.css": "/lab3-space-simulator/static/css/main.235580e7.css",
+    "main.js": "/lab3-space-simulator/static/js/main.bf2c497b.js",
+    "static/js/453.6e4f956a.chunk.js": "/lab3-space-simulator/static/js/453.6e4f956a.chunk.js",
+    "index.html": "/lab3-space-simulator/index.html",
+    "main.235580e7.css.map": "/lab3-space-simulator/static/css/main.235580e7.css.map",
+    "main.bf2c497b.js.map": "/lab3-space-simulator/static/js/main.bf2c497b.js.map",
+    "453.6e4f956a.chunk.js.map": "/lab3-space-simulator/static/js/453.6e4f956a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.235580e7.css",
-    "static/js/main.c1216cce.js"
+    "static/js/main.bf2c497b.js"
   ]
 }
